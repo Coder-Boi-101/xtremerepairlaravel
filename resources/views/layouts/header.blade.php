@@ -41,7 +41,7 @@
 
                         <!--Info Box-->
                         <div class="upper-column info-box btn-box">
-                            <a href="{{url('/')}}get-instant-quote" class="theme-btn btn-style-four blink">Instant Repair</a>
+                            <a href="/get-instant-quote" class="theme-btn btn-style-four blink">Instant Repair</a>
                         </div>
 
                     </div>
@@ -68,141 +68,142 @@
                                 <ul class="navigation clearfix">
 
 							<?php
-								if(basename($_SERVER['PHP_SELF']) == 'index.php' || basename($_SERVER['PHP_SELF']) == '' || basename($_SERVER['PHP_SELF']) == 'thankyou.php') {
-							?>			
-									<li class="current"><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+								if(basename($_SERVER['PHP_SELF']) == 'index' || basename($_SERVER['PHP_SELF']) == '' || basename($_SERVER['PHP_SELF']) == 'thankyou') {
+                                    // echo var_dump(basename($_SERVER['PHP_SELF']));
+?>			
+									<li class="current"><a href="/">Home</a></li>
+                                    <li class=""><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">Repair Services</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'about.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'about') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li class="current"><a href="{{url('/')}}about">About Us</a></li>
+									<li><a href="/">Home</a></li>
+                                    <li class="current"><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'repair.php' || basename($_SERVER['PHP_SELF']) == 'get-instant-quote.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'repair' || basename($_SERVER['PHP_SELF']) == 'get-instant-quote') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown current"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'sell.php' || basename($_SERVER['PHP_SELF']) == 'sell-models.php' || basename($_SERVER['PHP_SELF']) == 'sell-brands.php' || basename($_SERVER['PHP_SELF']) == 'buy-sell.php' || basename($_SERVER['PHP_SELF']) == 'sell-model-view.php' || basename($_SERVER['PHP_SELF']) == 'sell-confirm.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'sell' || basename($_SERVER['PHP_SELF']) == 'sell-models' || basename($_SERVER['PHP_SELF']) == 'sell-brands' || basename($_SERVER['PHP_SELF']) == 'buy-sell' || basename($_SERVER['PHP_SELF']) == 'sell-model-view' || basename($_SERVER['PHP_SELF']) == 'sell-confirm') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li class="current"><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li class="current"><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							}
-                            elseif(basename($_SERVER['PHP_SELF']) == 'buy.php' || basename($_SERVER['PHP_SELF']) == 'buy-models.php' || basename($_SERVER['PHP_SELF']) == 'buy-brands.php' ||  basename($_SERVER['PHP_SELF']) == 'buy-confirm.php' ||  basename($_SERVER['PHP_SELF']) == 'all-models-variations.php') {
+                            elseif(basename($_SERVER['PHP_SELF']) == 'buy' || basename($_SERVER['PHP_SELF']) == 'buy-models' || basename($_SERVER['PHP_SELF']) == 'buy-brands' ||  basename($_SERVER['PHP_SELF']) == 'buy-confirm' ||  basename($_SERVER['PHP_SELF']) == 'all-models-variations') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li class="current"><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li class="current"><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'contact.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'contact') {
 							?>
-                                    <li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li class="current"><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li class="current"><a href="/contact">Contact</a></li>
 							<?php
 							} 
                             else
                             { ?>
-                                    <li  class="current"><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+                                    <li  class=""><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                         <?php
                             }
 							?>
-                                    <li class="hide-desktop"><a href="{{url('/')}}get-instant-quote">Get Instant Quote</a></li>
+                                    <li class="hide-desktop"><a href="/get-instant-quote">Get Instant Quote</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -226,7 +227,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{{url('/')}}" title=""><img src="{{asset('images/bmr-logo.png')}}" style="" alt="" title=""></a>
+                    <a href="/" title=""><img src="{{asset('images/bmr-logo.png')}}" style="" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -235,118 +236,118 @@
                         <div class="navbar-collapse show collapse clearfix">
                             <ul class="navigation clearfix">
                                 <?php
-								if(basename($_SERVER['PHP_SELF']) == 'index.php' || basename($_SERVER['PHP_SELF']) == '' || basename($_SERVER['PHP_SELF']) == 'thankyou.php') {
+								if(basename($_SERVER['PHP_SELF']) == 'index' || basename($_SERVER['PHP_SELF']) == '' || basename($_SERVER['PHP_SELF']) == 'thankyou') {
 							?>			
-									<li class="current"><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li  class="current"><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'about.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'about') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li class="current"><a href="{{url('/')}}about">About Us</a></li>
+									<li class=""><a href="/">Home</a></li>
+                                    <li class="current"><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'repair.php' || basename($_SERVER['PHP_SELF']) == 'get-instant-quote.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'repair' || basename($_SERVER['PHP_SELF']) == 'get-instant-quote') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li  class=""><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown current"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'sell.php' || basename($_SERVER['PHP_SELF']) == 'sell-models.php' || basename($_SERVER['PHP_SELF']) == 'sell-brands.php' || basename($_SERVER['PHP_SELF']) == 'buy-sell.php' || basename($_SERVER['PHP_SELF']) == 'sell-model-view.php' || basename($_SERVER['PHP_SELF']) == 'sell-confirm.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'sell' || basename($_SERVER['PHP_SELF']) == 'sell-models' || basename($_SERVER['PHP_SELF']) == 'sell-brands' || basename($_SERVER['PHP_SELF']) == 'buy-sell' || basename($_SERVER['PHP_SELF']) == 'sell-model-view' || basename($_SERVER['PHP_SELF']) == 'sell-confirm') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li  class=""><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li class="current"><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li class="current"><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							}
-                            elseif(basename($_SERVER['PHP_SELF']) == 'buy.php' || basename($_SERVER['PHP_SELF']) == 'buy-models.php' || basename($_SERVER['PHP_SELF']) == 'buy-brands.php' ||  basename($_SERVER['PHP_SELF']) == 'buy-confirm.php' ||  basename($_SERVER['PHP_SELF']) == 'all-models-variations.php') {
+                            elseif(basename($_SERVER['PHP_SELF']) == 'buy' || basename($_SERVER['PHP_SELF']) == 'buy-models' || basename($_SERVER['PHP_SELF']) == 'buy-brands' ||  basename($_SERVER['PHP_SELF']) == 'buy-confirm' ||  basename($_SERVER['PHP_SELF']) == 'all-models-variations') {
 							?>
-									<li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+									<li  class=""><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li><a href="{{url('/')}}contact">Contact</a></li>
+                                    <li class="current"><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li><a href="/contact">Contact</a></li>
 							<?php
 							} 
-							elseif(basename($_SERVER['PHP_SELF']) == 'contact.php') {
+							elseif(basename($_SERVER['PHP_SELF']) == 'contact') {
 							?>
-                                    <li><a href="{{url('/')}}">Home</a></li>
-                                    <li><a href="{{url('/')}}about">About Us</a></li>
+                                    <li  class=""><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li class="dropdown"><a href="#">We Fix</a>
                                         <ul>
-                                            <li><a href="{{url('/')}}get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Smartphone Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Tablet Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Computer/Laptop Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Gaming Console Repair</a></li>
-                                            <li><a href="{{url('/')}}get-instant-quote">Drone</a></li>
+                                            <li><a href="/get-instant-quote"><span style="text-transform:none;">i</span>Phone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Smartphone Repair</a></li>
+                                            <li><a href="/get-instant-quote">Tablet Repair</a></li>
+                                            <li><a href="/get-instant-quote">Computer/Laptop Repair</a></li>
+                                            <li><a href="/get-instant-quote">Gaming Console Repair</a></li>
+                                            <li><a href="/get-instant-quote">Drone</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/')}}buy">We Sell</a></li>
-                                    <li><a href="{{url('/')}}sell">We Buy</a></li>
-                                    <li class="current"><a href="{{url('/contact')}}">Contact</a></li>
+                                    <li><a href="/buy">We Sell</a></li>
+                                    <li><a href="/sell">We Buy</a></li>
+                                    <li class="current"><a href="/contact">Contact</a></li>
 							<?php
 							} 
 							?>

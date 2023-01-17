@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BuysController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+// Route::get('/get-instant-quote', function () {
+//     return view('get-instant-quote');
+// });
+
+Route::get('/buy',[BuysController::class, 'index']);
+
+// Route::get('/sell', function () {
+//     return view('sell');
+// });
+
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
